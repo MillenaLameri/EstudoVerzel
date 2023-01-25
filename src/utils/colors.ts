@@ -10,6 +10,7 @@ export const Colors = {
   gray8: "#fefefe",
   white: "#ffffff",
   black: "#000000",
+  red: "#f14764",
 
   divisor: "#f2f2f2",
 } as const;

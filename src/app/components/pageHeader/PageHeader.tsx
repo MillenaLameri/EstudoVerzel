@@ -18,15 +18,18 @@ export const PageHeader = () => {
     <Container maxWidth="xl">
       <Toolbar disableGutters>
         <Typography
+          mr={2}
+          noWrap
+          component="a"
+          href="/"
+          fontFamily={"monospace"}
+          letterSpacing=".3rem"
+          fontWeight="700"
           variant="h6"
+          display={{ xs: "block", md: "flex" }}
           sx={{
-            mr: 2,
-            display: { xs: "block", md: "flex" },
-            fontFamily: "monospace",
-            fontWeight: 700,
-            letterSpacing: ".3rem",
-            color: "inherit",
             textDecoration: "none",
+            color: "inherit",
           }}
         >
           Verzel
@@ -37,11 +40,12 @@ export const PageHeader = () => {
             color="inherit"
             onClick={openHamburguer}
             sx={{
-              ml: 25,
               mr: 2,
               display: {
                 xs: "block",
-                sm: "none",
+                sm: "block",
+                md: "none",
+                xl: "none",
               },
             }}
           >
@@ -49,12 +53,10 @@ export const PageHeader = () => {
           </IconButton>
         </Box>
         <Box
-          sx={{
-            flexGrow: 1,
-            display: { xs: "none", md: "flex" },
-            alignItems: "center",
-            justifyContent: "center",
-          }}
+          display={{ xs: "none", md: "flex" }}
+          alignItems="center"
+          justifyContent="center"
+          flexGrow="1"
         >
           <Box>
             <Button sx={{ my: 2, fontWeight: 700, color: Colors.gray2 }}>
@@ -72,24 +74,18 @@ export const PageHeader = () => {
             </Button>
           </Box>
         </Box>
-        <Box
-          mr={2}
-          sx={{
-            display: { xs: "none", md: "flex" },
-          }}
-        >
-          <Button sx={{ my: 2, color: Colors.black }}>Login</Button>
+        <Box display={{ xs: "none", md: "flex" }} mr={2}>
+          <Button sx={{ my: 2, color: Colors.red }}>Login</Button>
         </Box>
-        <Box>
+        <Box display={{ xs: "none", md: "flex" }}>
           <Button
             variant="contained"
             sx={{
               my: 2,
               color: Colors.white,
-              display: { xs: "none", md: "flex" },
-              backgroundColor: Colors.black,
+              backgroundColor: Colors.red,
               "&:hover": {
-                backgroundColor: Colors.black,
+                backgroundColor: Colors.red,
                 boxShadow: "none",
               },
             }}

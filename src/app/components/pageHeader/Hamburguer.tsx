@@ -33,26 +33,13 @@ export const Hamburguer = ({ open, close }: Props) => {
           backgroundColor: Colors.white,
         }}
       >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          }}
-        >
+        <Box justifyContent="space-between" flexDirection="row" display="flex">
           <Typography
             variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mb: 2,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
+            fontFamily="monospace"
+            fontWeight="700"
+            letterSpacing=".3rem"
+            mb={2}
           >
             Verzel
           </Typography>
@@ -86,11 +73,11 @@ export const Hamburguer = ({ open, close }: Props) => {
           </ListItemButton>
         </Box>
         <Box
+          justifyContent="center"
+          display="flex"
+          position="absolute"
+          bottom={0}
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            position: "absolute",
-            bottom: "0",
             left: "50%",
             transform: "translate(-50%, 0)",
           }}
