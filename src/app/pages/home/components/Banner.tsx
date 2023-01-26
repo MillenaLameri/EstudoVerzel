@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import Car from "../../../../assents/img/Car.png";
-import { Colors } from "../../../../utils/colors";
 
 export const Banner = ({}) => {
   return (
@@ -27,28 +26,14 @@ export const Banner = ({}) => {
         }}
       >
         <Typography
-          variant="h1"
-          fontFamily={"Hanalei Fill"}
-          letterSpacing=".3rem"
-          fontWeight="700"
-          sx={{
-            display: { xs: "block", md: "flex" },
-          }}
-        >
-          Keep Calm
-        </Typography>
-        <Typography
-          ml={10}
           variant="h2"
-          fontFamily={"Hanalei Fill"}
-          letterSpacing=".3rem"
-          fontWeight="700"
-          color={Colors.red}
+          fontFamily={"Roboto"}
+          fontWeight="900"
           sx={{
             display: { xs: "block", md: "flex" },
           }}
         >
-          vá de carro!
+          Tudo começa com um sonho
         </Typography>
       </Box>
 

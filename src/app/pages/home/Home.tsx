@@ -1,12 +1,16 @@
 import { Box } from "@mui/material";
+import Divider from "@mui/material/Divider";
 import { PageHeader } from "../../components/pageHeader/PageHeader";
 import { Banner } from "./components/Banner";
+import { CarList } from "./components/CarList";
 
-export const Home = ({}) => {
+export const Home = () => {
   return (
-    <Box display="flex" flexDirection="column">
+    <Box>
       <PageHeader />
       <Banner />
+      <Divider />
+      <CarList />
     </Box>
   );
 };
