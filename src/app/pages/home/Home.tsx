@@ -11,6 +11,7 @@ export const Home = () => {
       <PageHeader />
       <Banner />
       <Box
+        display={{ xs: "none", md: "flex" }}
         sx={{
           bgcolor: Colors.gray8,
           height: "64px",

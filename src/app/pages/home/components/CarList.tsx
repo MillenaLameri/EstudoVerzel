@@ -9,7 +9,7 @@ export const CarList = () => {
   return (
     <Box display="flex">
       <Container>
-        <Box mt={5}>
+        <Box mt={5} p={2}>
           <Typography
             fontFamily={"Roboto"}
             fontWeight="bold"

@@ -4,8 +4,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { Hamburguer } from "./Hamburguer";
 import { Colors } from "../../../utils/colors";
-import { ROUTES } from "../../../routes/Routes";
-import { Link } from "react-router-dom";
 
 export const PageHeader = () => {
   const [open, setOpen] = useState(false);
