@@ -10,8 +10,13 @@ export const CarList = () => {
     <Box display="flex">
       <Container>
         <Box mt={5}>
-          <Typography mb={2} variant="h6">
-            Carros usados:
+          <Typography
+            fontFamily={"Roboto"}
+            fontWeight="bold"
+            mb={2}
+            variant="h5"
+          >
+            Carros usados
           </Typography>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={4}>

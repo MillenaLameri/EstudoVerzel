@@ -11,7 +11,7 @@ export const CardCar = () => {
         <img
           src={Carro}
           alt="carro"
-          style={{ height: "15rem", width: "20rem" }}
+          style={{ height: "12rem", width: "20rem" }}
         />
       </Box>
       <CardContent>

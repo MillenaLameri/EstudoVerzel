@@ -37,24 +37,7 @@ export const PageHeader = () => {
         >
           Verzel
         </Typography>
-        <Box>
-          <IconButton
-            edge="end"
-            color="inherit"
-            onClick={openHamburguer}
-            sx={{
-              mr: 2,
-              display: {
-                xs: "block",
-                sm: "block",
-                md: "none",
-                xl: "none",
-              },
-            }}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Box>
+
         <Box alignItems="center" justifyContent="center" flexGrow="1"></Box>
         <Box display={{ xs: "none", md: "flex" }}>
           <Box>
@@ -112,6 +95,24 @@ export const PageHeader = () => {
           >
             Cadastre-se
           </Typography>
+        </Box>
+        <Box>
+          <IconButton
+            edge="end"
+            color="inherit"
+            onClick={openHamburguer}
+            sx={{
+              mr: 2,
+              display: {
+                xs: "block",
+                sm: "block",
+                md: "none",
+                xl: "none",
+              },
+            }}
+          >
+            <MenuIcon />
+          </IconButton>
         </Box>
         <Hamburguer open={open} close={closeHambuguer} />
       </Toolbar>

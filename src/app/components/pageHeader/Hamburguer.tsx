@@ -1,5 +1,4 @@
 import { Box, Button, Typography } from "@mui/material";
-import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
 import CloseIcon from "@mui/icons-material/Close";
 import Divider from "@mui/material/Divider";
@@ -43,9 +42,7 @@ export const Hamburguer = ({ open, close }: Props) => {
           >
             Verzel
           </Typography>
-          <IconButton sx={{ mb: 2 }}>
-            <CloseIcon onClick={close} />
-          </IconButton>
+          <CloseIcon onClick={close} />
         </Box>
 
         <Divider sx={{ mb: 2 }} />
@@ -86,7 +83,17 @@ export const Hamburguer = ({ open, close }: Props) => {
             variant="contained"
             sx={{ m: 1, width: "10rem", backgroundColor: Colors.black }}
           >
-            Cadastre-se
+            <Typography
+              noWrap
+              component="a"
+              href="/login"
+              sx={{
+                textDecoration: "none",
+                color: Colors.white,
+              }}
+            >
+              Cadastre-se
+            </Typography>
           </Button>
           <Button
             variant="outlined"
@@ -97,7 +104,17 @@ export const Hamburguer = ({ open, close }: Props) => {
               color: Colors.black,
             }}
           >
-            Entrar
+            <Typography
+              noWrap
+              component="a"
+              href="/login"
+              sx={{
+                textDecoration: "none",
+                color: Colors.black,
+              }}
+            >
+              Entrar
+            </Typography>
           </Button>
         </Box>
       </Box>
